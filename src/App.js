@@ -1,6 +1,6 @@
-import Costs from "./components/Costs";
+import Costs from "./components/Costs/Costs";
 
-function App() {
+const App = () => {
   const costs = [
     {
       date: new Date(2021, 10, 22),
@@ -25,6 +25,6 @@ function App() {
       <Costs costs={costs} />
     </div>
   );
-}
+};
 
 export default App;
