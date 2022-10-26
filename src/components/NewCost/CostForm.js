@@ -14,9 +14,17 @@ const CostForm = () => {
 
   const nameChangeHandler = (event) => {
     // setName(event.target.value);
-    setUserInput({
-      ...userInput,
-      name: event.target.value,
+
+    // setUserInput({
+    //   ...userInput,
+    //   name: event.target.value,
+    // });
+
+    setUserInput((previousState) => {
+      return {
+        ...previousState,
+        name: event.target.value,
+      };
     });
   };
   const amountChangeHandler = (event) => {
